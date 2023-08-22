@@ -132,8 +132,55 @@ const fact1 = function factorial1(x)
 {
   if(x<=1)
   return 1;
-else
+   else
     return (x*factorial1(x-1));
 }
 console.log(fact1(5));
 
+
+function abTest(a,b)
+{
+  if(a<0 || b<0)
+  {
+    return undefined;
+  }
+  //return Math.round(225);
+ return Math.round(Math.pow((Math.sqrt(a) + Math.sqrt(b)),2));
+}
+console.log(abTest(3,4));
+
+var myPlants =
+[
+  {
+    type:"flower",
+    list:[
+      "rose","tulip","dandelion"
+    ]
+  },
+  {
+    type:"trees",
+    list:[
+      "fir","pine","birch"
+    ]
+  }
+];
+var secondTree= myPlants[0].list[2];
+console.log(secondTree);
+
+var myinfo=
+{
+  info:
+  {
+    name:"nikita",
+    age:20,
+    hobby:["typing","movies","playing","fitness"]
+  },
+  class:
+  {
+    branch:"cse",
+    domain:"tech"
+  }
+
+}
+console.log(myinfo.class.domain);
+console.log(myinfo.info.hobby[3])
