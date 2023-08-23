@@ -1,3 +1,4 @@
+
 //single line codn statement... 
 let age = prompt('age?', 18);
 
@@ -184,3 +185,26 @@ var myinfo=
 }
 console.log(myinfo.class.domain);
 console.log(myinfo.info.hobby[3])
+
+var zero;
+if ('shouldDefineZero') {
+  zero = function () {
+    console.log("This is zero.");
+  };
+}
+zero();
+
+// This function returns a string padded with leading zeros
+function padZeros(num, totalLen) {
+  let numStr = num.toString(); // Initialize return value as string
+  const numZeros = totalLen - numStr.length; // Calculate no. of zeros
+  for (let i = 1; i <= numZeros; i++) {
+    numStr = `0${numStr}`;
+  }
+  return numStr;
+}
+let result;
+ padZeros(42, 4); // returns "0042"
+ padZeros(42, 2); // returns "42"
+ padZeros(5, 4); // returns "0005"
+
