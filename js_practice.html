@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document To Practice JS</title>
+    <script>
+      function myfun() {
+        document.getElementById("head").innerHTML =
+          "Changed JS after using script in heading tag..";
+      }
+    </script>
+  </head>
+  <body>
+    <p id="head">JavaScript in Head</p>
+    <button onclick="myfun()">try it...</button>
+
+    <h1 id="doc" style="background-color: yellow">behaviour of js....</h1>
+    <img id="img" src="download (1).jpeg" />
+    <br />
+    <br />
+    <button onclick="document.getElementById('img').src='img1.jpeg' ">
+      see image effect....
+    </button>
+    <br />
+    <br />
+    <p id="demo" style="display: none">Hello JavaScript!</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.display='block'"
+    >
+      Click Me!
+    </button>
+    <br />
+    <br />
+    <button
+      onclick="document.getElementById('doc').style.backgroundColor='green' "
+    >
+      click me to tag.....
+    </button>
+
+    <p id="lorem"></p>
+    <button onclick="window.print('hello!!')">Print...</button>
+    <br />
+    <br />
+    <button onclick="document.write('This is Nikita Rao')">OnClick!!</button>
+    <script>
+      console.log(5 + 6);
+      window.alert("Welcome to JS...");
+      document.getElementById("doc").style.fontSize = "70px";
+      document.getElementById("lorem").innerHTML =
+        "Introduction To Java-Script....";
+    </script>
+  </body>
+</html>
