@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 90%;
+}
+
+body{
+    
+    font-family: 'Roboto Slab', serif; 
+   
+}
+
+.display-modal{
+     cursor:pointer;
+     font-size:1.5rem;
+     border: none;
+     margin:3rem , 4rem;
+     padding:3rem;
+     background-color: rgb(41, 103, 218);
+     color:rgb(88, 27, 27);
+     border-radius: 5rem ;
+}
+
+.modal{
+    position: absolute;
+    width:40%;
+    padding:1rem;
+    top:10%;
+    left:35%; 
+    background-color:rgb(94, 83, 68);
+    border-radius:10px;
+    z-index: 2;
+    box-shadow:0 0.5rem 2rem rgb(25, 11, 11) ;
+}
+
+.hide{
+    display: none;
+}
+
+.close-modal{
+    position:absolute;
+    top: 0.8rem;
+    right:2rem;
+    padding:5px;
+    cursor:pointer;
+    border:none;
+    border-radius:5px;
+}
+
+h2{
+    margin-bottom: 2.3rem;
+}
+
+.blureffect{
+    backdrop-filter: blur(5px);
+    background-color: rgba(204, 192, 192, 0.306);
+    width:100%;
+    position:absolute;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 1;
+}
