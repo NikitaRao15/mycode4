@@ -12,14 +12,14 @@
         <div class="calculator">
         <form>
         <div class="display">
-          <input type="text" name="display">
+          <input type="text" name="display" class="input">
         </div>
 
         <div>
             <input type="button" value="AC" >
-            <input type="button" value="DE">
-            <input type="button" value=".">
-            <input type="button" value="/">
+            <input type="button" value="DE" >
+            <input type="button" value="." onclick="display.value += '.'">
+            <input type="button" value="/" onclick="display.value += '/'">
         </div>
         <div>
             <input type="button" value="7" onclick="display.value += '7'">
@@ -35,16 +35,16 @@
         <input type="button" value="X" onclick="display.value += 'X'">
     </div>
     <div>
-        <input type="button" value="1">
-        <input type="button" value="2">
-        <input type="button" value="3">
-        <input type="button" value="+">
+        <input type="button" value="1" onclick="display.value += '1'">
+        <input type="button" value="2" onclick="display.value += '2'">
+        <input type="button" value="3" onclick="display.value += '3'">
+        <input type="button" value="+" onclick="display.value += '+'">
     </div>
     <div>
-        <input type="button" value="00">
-        <input type="button" value="0">
-        <input type="button" value="=">
-        <input type="button" value="-">
+        <input type="button" value="00" onclick="display.value += '00'">
+        <input type="button" value="0" onclick="display.value += '0'">
+        <input type="button" value="=" onclick="display.value += '='">
+        <input type="button" value="-" onclick="display.value += '-'">
     </div>
 </form>
         </div>
