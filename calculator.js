@@ -1,5 +1,5 @@
 let string ='';
-let buttons = document.querySelectorAll('input');
+let buttons = document.querySelectorAll('.button');
 Array.from(buttons).forEach((input)=>{
     input.addEventListener('onclick',(e)=>
     {
